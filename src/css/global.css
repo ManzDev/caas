@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=Goblin+One&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+  --bgcolor: #212a6a;
+  --font-title: "Goblin One", fantasy;
+  --font-alternative: "Bricolage Grotesque", fantasy;
+  --font-text: "Roboto Condensed", sans-serif;
+}
+
+body {
+  background: #111;
+  color: #eee;
+  margin: 0;
+  font-family: var(--font-text);
+  font-size: 1.5rem;
+  font-weight: 200;
+}
+
+section.wrapper {
+  max-width: 1024px;
+  min-height: 300px;
+  margin: auto;
+}
+
+h1, h2, h3 {
+  font-family: var(--font-alternative);
+  color: #fff;
+}
+
+h2 {
+  font-size: 2.5rem;
+}

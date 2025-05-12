@@ -1,0 +1,96 @@
+---
+
+---
+
+<style>
+  .hero {
+    background: var(--bgcolor);
+    color: #fff;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 125px;
+
+    .bgimage {
+      width: 100%;
+      height: 125px;
+      background: url("/images/background.png");
+      position: absolute;
+      padding: 1rem 0;
+      top: 0;
+      left: 0;
+      opacity: 15%;
+      mix-blend-mode: multiply;
+    }
+
+    hgroup {
+      display: grid;
+      place-items: center;
+      position: relative;
+      z-index: 10;
+    }
+
+    h1 {
+      font-family: var(--font-title);
+      font-size: 5rem;
+      margin: 0;
+    }
+
+    p {
+      font-family: var(--font-alternative);
+      font-size: 2rem;
+      margin: 0;
+      line-height: 0.25lh;
+      color: #868bad;
+    }
+  }
+
+  nav {
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+    background: #111537;
+
+    a {
+      padding: 1rem;
+      margin: 0 0.25rem;
+      color: #fff;
+      background: #283283;
+      text-decoration: none;
+
+      &:hover {
+        background: #0003;
+      }
+    }
+  }
+</style>
+
+<section class="hero" id="particles-js">
+  <hgroup>
+    <h1>CaaS</h1>
+    <p>Cat-as-a-service</p>
+  </hgroup>
+  <div class="bgimage"></div>
+</section>
+<nav>
+  <a href="">Link 1</a>
+  <a href="">Link 2</a>
+  <a href="">Link 3</a>
+  <a href="">Link 4</a>
+  <a href="">Link 5</a>
+</nav>
+
+<script type="module">
+  import { annotate } from "https://esm.sh/rough-notation";
+
+  const h1 = document.querySelector("h1");
+
+  const annotation = annotate(h1, {
+    type: "bracket",
+    color: "#999",
+    brackets: ["left", "right"]
+  });
+
+  setTimeout(() => annotation.show(), 2000);
+</script>

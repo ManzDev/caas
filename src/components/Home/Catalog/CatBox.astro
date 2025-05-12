@@ -1,0 +1,50 @@
+---
+const { name, image } = Astro.props;
+
+const imagePath = `/images/${image}.jpg`;
+---
+
+<style>
+  .cat-box {
+    --size: 300px;
+
+    width: var(--size);
+    height: var(--size);
+    background: var(--image);
+    background-size: cover;
+
+    display: grid;
+    place-content: end;
+    place-items: end;
+    filter: grayscale(100%);
+    transition: filter 0.5s;
+    font-size: 1rem;
+    font-weight: 400;
+
+    &:hover {
+      filter: grayscale(0%);
+    }
+  }
+
+  .name {
+    background: #283283;
+    color: #fff;
+    padding: 0.5rem 1rem;
+  }
+
+  a {
+    background: #833737;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+
+    &:hover {
+      background: #c54e4e;
+    }
+  }
+</style>
+
+<div class="cat-box" style={`--image: url(${imagePath})`}>
+  <span class="name">{name}</span>
+  <a href="#">¡Contrátalo!</a>
+</div>

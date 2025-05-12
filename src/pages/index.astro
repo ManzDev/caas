@@ -1,16 +1,23 @@
 ---
+import BaseLayout from "@/layouts/BaseLayout.astro";
 
+// Components
+import Hero from "@/components/Home/Hero.astro";
+import Features from "@/components/Home/Features.astro";
+import Catalog from "@/components/Home/Catalog.astro";
+import Testimonies from "@/components/Home/Testimonies.astro";
+import Pricing from "@/components/Home/Pricing.astro";
+import CTA from "@/components/Home/CTA.astro";
+
+const title = "Página oficial de CaaS (Cat-as-a-service)";
+const description = "...";
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
-</html>
+<BaseLayout title={title} description={description}>
+  <Hero />
+  <Features />
+  <Catalog />
+  <Testimonies />
+  <Pricing />
+  <CTA />
+</BaseLayout>

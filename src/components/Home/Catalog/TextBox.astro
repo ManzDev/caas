@@ -1,0 +1,25 @@
+---
+const { text } = Astro.props;
+---
+
+<style>
+  .text-box {
+    --size: 300px;
+
+    width: var(--size);
+    height: var(--size);
+    background: var(--bgcolor);
+    color: #fff;
+    font-family: var(--font-alternative);
+    font-size: 2.5rem;
+    padding: 2rem;
+    box-sizing: border-box;
+
+    display: grid;
+    place-items: center;
+  }
+</style>
+
+<div class="text-box">
+  <span>{text}</span>
+</div>
