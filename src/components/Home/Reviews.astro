@@ -1,0 +1,34 @@
+---
+import ReviewCard from "@/components/Home/Reviews/ReviewCard.astro";
+import reviewsData from "@/data/reviews.json";
+---
+
+<style>
+  p {
+    color: #888;
+  }
+
+  .list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+</style>
+
+<section class="wrapper" id="testimonios">
+
+  <h2>TestiMEOWnios</h2>
+
+  <p>Aquí puedes leer los testimonios de algunos de nuestros clientes:</p>
+
+  <div class="list">
+
+    { reviewsData.map(user => (<ReviewCard
+        name={user.name}
+        image={user.image}
+        rating={user.rating}>{user.text}</ReviewCard>)
+      ) }
+
+  </div>
+
+</section>

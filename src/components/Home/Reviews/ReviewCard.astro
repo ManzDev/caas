@@ -1,0 +1,91 @@
+---
+import StarRating from "@/components/Home/Reviews/StarRating.astro";
+
+const { name, image, rating } = Astro.props;
+
+const imagePath = `images/reviews/${image}.png`;
+---
+
+<style>
+  .review-card {
+    --image-size: 200px;
+
+    max-width: 500px;
+    display: grid;
+    grid-template-columns: var(--image-size) 1fr;
+    grid-template-rows: 3lh 1fr;
+    background: #fff;
+
+    .image-container {
+      grid-row-start: 1;
+      grid-row-end: 3;
+      margin: 1rem;
+      display: grid;
+      place-items: center;
+
+      img {
+        width: calc(var(--image-size) * 0.9);
+        border-radius: 50%;
+        aspect-ratio: 1;
+      }
+    }
+
+    .name-container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 0 2rem;
+
+      h3 {
+        color: #333;
+        margin: 0;
+      }
+
+      .rating {
+        color: #000;
+      }
+    }
+
+    .text-container {
+      padding: 1rem 2rem;
+
+      p {
+        font-size: 1.2rem;
+        font-weight: 300;
+        color: #333;
+        margin: 0;
+
+        &::before,
+        &::after {
+          font-size: 3rem;
+          font-weight: 100;
+          color: #cccccc;
+          position: absolute;
+        }
+
+        &::before {
+          content: "❝";
+          translate: -28px -24px;
+        }
+
+        &::after {
+          content: "❞";
+          translate:
+        }
+      }
+    }
+  }
+</style>
+
+<div class="review-card">
+  <div class="image-container">
+    <img src={imagePath} alt="">
+  </div>
+  <div class="name-container">
+    <h3>{name}</h3>
+    <StarRating rating={rating} />
+  </div>
+  <div class="text-container">
+    <p><slot /></p>
+  </div>
+</div>

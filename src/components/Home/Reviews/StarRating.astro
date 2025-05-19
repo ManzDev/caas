@@ -1,0 +1,24 @@
+---
+const { rating } = Astro.props;
+
+const stars = Math.floor(rating / 2);
+
+---
+
+<style>
+  .rating {
+    display: flex;
+    font-size: 1rem;
+  }
+
+  span.off {
+    filter: grayscale(100%);
+    opacity: 25%;
+  }
+</style>
+
+<div class="rating">
+  <span>{ "⭐".repeat(stars) }</span>
+  <span class="off">{ "⭐".repeat(5 - stars)}</span>
+</div>
+

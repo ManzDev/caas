@@ -1,0 +1,74 @@
+---
+import TableColumn from "@/components/Home/Pricing/TableColumn.astro";
+---
+
+<style>
+  h2 {
+    margin-bottom: 6rem;
+  }
+
+  .table {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0.75rem;
+
+    font-size: 1.25rem;
+  }
+
+  .column {
+    background: var(--color);
+
+    h1 {
+      color: #111;
+      padding: 0 2rem;
+      margin-bottom: 5rem;
+    }
+  }
+
+  ul {
+    padding: 0.5rem;
+    list-style-type: none;
+    color: #666;
+
+    li span {
+      filter: grayscale(100%);
+    }
+  }
+</style>
+
+<style is:global>
+  .table .column:nth-child(1) { --color: #fff; }
+  .table .column:nth-child(2) { --color: #17406d; }
+  .table .column:nth-child(3) {
+    --color: #00b050;
+    scale: 1.1;
+    translate: 0 -10px;
+  }
+  .table .column:nth-child(4) { --color: #7030a0; }
+</style>
+
+<section class="wrapper" id="pricing">
+
+  <h2>Gatarifas (tabla de precios)</h2>
+
+  <div class="table">
+    <div class="text column">
+      <header>
+        <h1>Business Pricing<br>Plan</h1>
+      </header>
+
+      <ul>
+        <li><span>✨</span> Compila durmiendo</li>
+        <li><span>✨</span> Refactoriza sin arañar</li>
+        <li><span>✨</span> Maulla si detecta errores</li>
+        <li><span>✨</span> Acceso a CatHub Pages</li>
+        <li><span>✨</span> Siestas entre commits</li>
+        <li><span>✨</span> Acceso anticipado a CatGPT™</li>
+      </ul>
+    </div>
+    <TableColumn id="0" />
+    <TableColumn id="1" />
+    <TableColumn id="2" />
+  </div>
+
+</section>

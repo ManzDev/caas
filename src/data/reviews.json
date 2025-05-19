@@ -1,0 +1,50 @@
+[
+  {
+    "name": "Laura Méndez",
+    "image": "laura",
+    "rating": 10,
+    "text": "Pensé que era un chiste. Luego el gato solucionó mi API rota, maulló con orgullo y se durmió encima del router. Lo respeto profundamente."
+  },
+  {
+    "name": "Rodrigo Tendero",
+    "image": "rodrigo",
+    "rating": 9,
+    "text": "El gato me ignoró durante tres días. Luego hizo un pull request impecable. Me siento reemplazado y extrañamente satisfecho."
+  },
+  {
+    "name": "Fernanda Ruiz",
+    "image": "fernanda",
+    "rating": 3,
+    "text": "No creía en gatos programadores. Ahora tengo tres. Uno hace el frontend, otro el QA, y el pequeño solo duerme, como todo buen project lead."
+  },
+  {
+    "name": "Manuel Ortega",
+    "image": "manuel",
+    "rating": 5,
+    "text": "El gato tiró mi monitor y luego arregló la base de datos con una eficiencia felina. Caótico, pero funcional. Como todo en mi vida."
+  },
+  {
+    "name": "Sebastián Pérez",
+    "image": "sebastian",
+    "rating": 8,
+    "text": "El gato hizo el login en PHP sin juzgarme. Es más apoyo emocional y técnico que cualquier profe que he tenido."
+  },
+  {
+    "name": "Lucía Barrera",
+    "image": "lucia",
+    "rating": 9,
+    "text": "El gato reescribió mis microcopys y los hizo más adorables. Ahora los usuarios ronronean al hacer clic. Literalmente. Estoy confundida y feliz."
+  },
+  {
+    "name": "Valentina Ríos",
+    "image": "valentina",
+    "rating": 10,
+    "text": "No me gusta perder tiempo. El gato entregó a tiempo, sin excusas ni reuniones. Voy a reemplazar al equipo humano. Empezando por ti, lector."
+  },
+  {
+    "name": "Nicolás Vélez",
+    "image": "nicolas",
+    "rating": 8,
+    "text": "Me ayudó a montar un portfolio en React. No me explicó nada, pero su silencio fue inspirador. Le di snacks, ahora es mi lead dev."
+  }
+]

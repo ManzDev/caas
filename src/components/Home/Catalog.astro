@@ -10,6 +10,7 @@ import TextBox from "@/components/Home/Catalog/TextBox.astro";
 
   .cat-list {
     display: flex;
+    justify-content: center;
     flex-wrap: wrap;
   }
 
@@ -18,20 +19,20 @@ import TextBox from "@/components/Home/Catalog/TextBox.astro";
   }
 
   p {
-
     color: #888;
-    font-size: 1.25rem;
 
     strong {
-      font-size: 1.5rem;
+      color: #fff;
     }
   }
 </style>
 
-<section class="wrapper">
+<section class="wrapper" id="catalogo">
 
   <h2>CATálogo</h2>
-  <p><strong>Explora nuestro catálogo de programadores felinos</strong><br>Cada uno de nuestros gatos ha sido cuidadosamente seleccionado por su experiencia en lenguajes de programación, su habilidad para dormir en teclados y su talento innato para detectar errores con una sola mirada de desaprobación.</p>
+  <p><strong>Explora nuestro catálogo de programadores felinos</strong></p>
+
+  <p>Cada uno de nuestros gatos ha sido cuidadosamente seleccionado por su experiencia en lenguajes de programación, su habilidad para dormir en teclados y su talento innato para detectar errores con una sola mirada de desaprobación.</p>
 
   <div class="cat-list">
     <CatBox name="Macoco" image="cat-1" />

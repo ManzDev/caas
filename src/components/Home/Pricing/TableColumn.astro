@@ -1,0 +1,85 @@
+---
+import pricingData from "@/data/pricing.json";
+const { id } = Astro.props;
+
+const plan = pricingData[id];
+---
+
+<style>
+  .column {
+    background: var(--color);
+    box-shadow:
+      0 0 10px #0008 inset,
+      0 0 20px #0000;
+
+    header,
+    main {
+      padding: 0.5rem;
+    }
+
+    header {
+      text-align: center;
+    }
+
+    hgroup {
+      h1 {
+        margin: 0;
+        font-size: 2rem;
+      }
+      p {
+        margin: 0;
+      }
+    }
+
+    .price {
+      background: #0004;
+      text-align: center;
+      padding: 1rem;
+
+      h3 {
+        font-size: 3rem;
+        margin: 0;
+
+        span {
+          font-family: var(--font-alternative);
+          font-size: 1.5rem;
+          vertical-align: super;
+        }
+      }
+
+      span {
+        font-size: 1rem;
+      }
+    }
+
+    ul {
+      padding: 0;
+      list-style-type: none;
+    }
+  }
+</style>
+
+<div class="column">
+
+  <header>
+    <div class="icon-container">
+    </div>
+
+    <hgroup>
+      <h1>{plan.name}</h1>
+      <p>Plan</p>
+    </hgroup>
+  </header>
+
+  <div class="price">
+    <h3><span>$</span>{plan.price}</h3>
+    <span>O {plan.price / 200} 🐟 equivalentes</span>
+  </div>
+
+  <main>
+    <ul class="features">
+      {plan.features.map(feature => (<li>{feature}</li>))}
+    </ul>
+  </main>
+
+</div>

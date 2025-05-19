@@ -1,0 +1,38 @@
+[
+  {
+    "name": "Kitty Basic",
+    "price": 550,
+    "features": [
+      "❌ No",
+      "❌ No",
+      "✅ Sí",
+      "✅ Sí",
+      "✅ Sí, casi todo el tiempo",
+      "❌ No"
+    ]
+  },
+  {
+    "name": "Bigotes Pro",
+    "price": 780,
+    "features": [
+      "✅ Limitado a 12h",
+      "✅ Sí",
+      "✅ Sí",
+      "✅ Sí",
+      "✅ Sí",
+      "❌ No"
+    ]
+  },
+  {
+    "name": "Ronroneo Plus",
+    "price": 990,
+    "features": [
+      "✅ Limitado a 24h",
+      "✅ Con seguro médico",
+      "✅ Sí",
+      "✅ Sí",
+      "❌ No",
+      "✅ Sí"
+    ]
+  }
+]
